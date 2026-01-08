@@ -1,0 +1,305 @@
+/* IMPORT GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* END IMPORT GOOGLE FONTS */
+
+/* COMMON STYLE */
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* END COMMON STYLE */
+
+/* HTML STYLE */
+
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(53, 53, 249, 0.806),
+    rgb(37, 37, 37)
+  );
+  backdrop-filter: blur(10px);
+}
+
+/* END HTML STYLE */
+
+/* BODY STYLE */
+
+body {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 20px rgba(254, 252, 252, 0.968);
+  border-radius: 30px;
+  /* background: gray; */
+  position: relative;
+}
+
+/* END BODY STYLE */
+
+/* HEADER STYLE */
+
+header {
+  height: 90px;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #cccccc9b;
+}
+
+header img {
+  height: 50px;
+  margin-left: 20px;
+}
+
+header h2 {
+  color: white;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+button {
+  padding: 8px 20px;
+  outline: none;
+  border: 2px solid #fefefe42;
+  border-radius: 30px;
+  background: rgba(230, 223, 223, 0.756);
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.55);
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 1.15s ease;
+}
+
+button:hover {
+  border: 2px solid rgba(0, 0, 0, 0.285);
+  box-shadow: 1px 1px 6px rgba(254, 252, 252, 0.968);
+  background-color: rgba(236, 20, 49, 0.833);
+  color: rgba(254, 252, 252, 0.968);
+  transition: 1.15s;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.image1 {
+  height: 40px;
+  cursor: pointer;
+}
+
+.image1:hover {
+  border-radius: 20px;
+  background-color: #a7a5a546;
+  transition: 1.15s;
+}
+
+.image1:active {
+  opacity: 0.3;
+}
+
+/* BACKDROP STYLE */
+
+#backdrop {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.377);
+  z-index: 100;
+  display: none;
+}
+
+#contents {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  
+  width: 415px;
+  height: max-content;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+#contents p {
+  color: rgba(128, 128, 128, 0.854);
+}
+
+#contents h2 {
+  color: #010101b1;
+  font-size: 2rem;
+  border-bottom: 2px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contents h3 {
+  color: #010101b1;
+  font-size: 1.20rem;
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 2px solid #ccc;
+  text-align: center;
+}
+
+
+
+/* END BACKDROP STYLE */
+
+/* END HEADER STYLE */
+
+/* CHAT VIEW SECTION STYLE */
+
+.chat-view {
+  height: 75%;
+  /* background-color: aqua; */
+  /* margin-top: 10px; */
+  padding: 10px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.chat-view::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-view p {
+  color: rgba(255, 255, 255, 0.806);
+  font-size: 1em;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+/* COMMON STYLE IN CHAT VIEW */
+.botChat,
+.userChat {
+  max-width: 50%;
+  /* width: max-content; */
+  height: max-content;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* END COMMON STYLE IN CHAT VIEW */
+
+.chat-view .botChat {
+  background: linear-gradient(
+    to top left,
+    rgb(136, 0, 255),
+    rgba(76, 0, 255, 0.66)
+  );
+  backdrop-filter: blur(20px);
+  border: 1px solid #ffffff3c;
+}
+
+.chat-view .userChat {
+  margin: 20px 10px 20px 50%;
+}
+
+/* GLASS DESIGN FOR USER CHAT DIV*/
+
+.chat-view .userChat {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari-u vendi */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* END GLASS DESIGN FOR USER CHAT DIV*/
+
+/* END CHAT VIEW SECTION STYLE */
+
+/* FOOTER STYLE */
+/* 
+footer {
+  height: 93px;
+  background: transparent;
+  border-radius: 0 0 30px 30px;
+  border-top: 1px solid #cccccc9b;
+  padding: 10px;
+  display: flex;
+  z-index: -1;
+} */
+
+textarea {
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  color: white;
+  padding: 20px;
+  padding-right: 70px;
+  line-height: 24px;
+  font-size: 1.1em;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #fbfafa49;
+  background: transparent;
+  box-sizing: border-box;
+  resize: none;
+  /* overflow-wrap: break-word ; */
+  scrollbar-width: none;
+  /* margin-bottom: 10px; */
+}
+
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.459);
+  font-weight: 600;
+}
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.image2 {
+  height: 30px;
+  position: absolute;
+  right: 32px;
+  bottom: 45px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* END FOOTER STYLE */
+
+/* ABSOLUTE HOVER STYLE  */
+
+/* COMMON STYLE OF FLOOTTING DIV */
+
+.flooter,
+.submit {
+  color: rgba(255, 255, 255, 0.849);
+  position: absolute;
+  border: 1px solid #fefefe44;
+  background-color: rgba(70, 69, 69, 0.815);
+  padding: 0 10px;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+/* END COMMON STYLE OF FLOOTTING DIV */
+
+.submit {
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+/* END ABSOLUTE HOVER STYLE  */
