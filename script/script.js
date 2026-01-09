@@ -79,7 +79,7 @@ userInput.addEventListener("keypress", (event) => {
 const backDrop = document.getElementById("backdrop");
 
 faceImage.addEventListener("click", () => {
-  backDrop.style.visiblity = "visible";
+  backDrop.style.visibility = "visible";
 });
 
 backDrop.addEventListener("click", () => {
