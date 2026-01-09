@@ -79,11 +79,11 @@ userInput.addEventListener("keypress", (event) => {
 const backDrop = document.getElementById("backdrop");
 
 faceImage.addEventListener("click", () => {
-  backDrop.style.display = "block";
+  backDrop.style.visiblity = "visible";
 });
 
 backDrop.addEventListener("click", () => {
-  backDrop.style.display = "none";
+  backDrop.style.visibility = "hidden";
 })
 
 // END FACE ICON IMAGE HANDLER 
