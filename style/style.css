@@ -129,6 +129,7 @@ button:active {
   left: 10%;
   width: 415px;
   height: max-content;
+  width: 100%;
   background-color: white;
   padding: 20px 30px;
   border-radius: 20px;
