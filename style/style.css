@@ -19,7 +19,7 @@
 
 html {
   width: 100%;
-  height: max-content;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,8 +251,8 @@ textarea {
   font-weight: 500;
   outline: none;
   border: 1px solid #fbfafa49;
-  background: #2d2b2b;
   box-sizing: border-box;
+  background: #2d2b2b;
   resize: none;
   /* overflow-wrap: break-word ; */
   scrollbar-width: none;
