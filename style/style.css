@@ -271,7 +271,7 @@ textarea::-webkit-scrollbar {
   height: 30px;
   position: absolute;
   right: 32px;
-  bottom: 45px;
+  /* bottom: 45px; */
   background: transparent;
   cursor: pointer;
 }
